@@ -15,14 +15,23 @@ body{
 .title{
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 10%;
 }
 
 .logo{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    width: auto;
+}
+
+.img1 {
+    width: 50%;
 }
 
 .heading{
@@ -30,7 +39,7 @@ body{
     flex-flow: column wrap;
     align-items: center;
     align-content: center;
-    margin-left: -4em;
+    /* margin-left: -4em; */
 }
 
 .heading h1{
@@ -97,10 +106,6 @@ form textarea{
 
 @media only screen and (max-width: 600px) {
     .heading{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        align-content: center;
         font-size: 90%;
     }
 
@@ -110,8 +115,6 @@ form textarea{
 
     .logo{
         width: 30%;
-        display: flex;
-        align-items: center;
-        align-content: center;
+        justify-content: center;
     }
   }
