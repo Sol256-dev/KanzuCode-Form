@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kanzu Code Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <div><img class="logo" src="img/kazucode.png" alt="" srcset=""></div>
+
+            <div class="heading"><h1>Kanzu Code Survey Form</h1>
+                <br>Take some time to fill this form with your details.
+            </div>
+        </div>
+        
+        <div class="frm">
+            <form action="" method="get">
+                <label for="name" id="label1">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name" required><br>
+                <label for="email" id="label2">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email" required><br>
+                <label for="age" id="label3">Age (Optional)</label><br>
+                <input type="number" id="age" step="1" placeholder="Enter your age"><br>
+                <label for="role" id="label4">What best describes your current Role?</label><br>
+                <select name="roles" id="role" required>
+                    <option value="Student" selected>Student</option>
+                    <option value="Full time learner">Full time learner</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                <div class="chck">
+                    <label for="" id="label5">Would you recommend the KCF Bootcamp to a friend?</label><br>
+                    <input type="radio" name="recommend" id=""> Definitely <br>
+                    <input type="radio" name="recommend" id=""> Maybe <br>
+                    <input type="radio" name="recommend" id=""> Not sure <br><br>
+                </div>
+
+                <div class="rdbtn">
+                    <label for="" id="label6">What would you like to see improved in bootcamp? (Check all that apply)</label><br>
+                    <input type="checkbox" name="feedback" id="">Front-end-projects <br>
+                    <input type="checkbox" name="feedback" id="">Back-end-projects <br>
+                    <input type="checkbox" name="feedback" id="">Data-visualization <br>
+                    <input type="checkbox" name="feedback" id="">Pair-programming-sessions <br>
+                    <input type="checkbox" name="feedback" id="">Coding-challenges <br><br>
+                </div>
+            
+                <label for="txtar" id="label7">Any comments or suggestions?</label><br>
+                <textarea name="" id="txtar" cols="30" rows="3" placeholder="Enter your comment" required></textarea><br>
+                <input id="subbtn" type="submit" name="">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

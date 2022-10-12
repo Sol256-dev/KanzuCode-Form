@@ -1,0 +1,117 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #eeeeee;
+    font-size: 20px;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 10px 0;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.heading{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    margin-left: -4em;
+}
+
+.heading h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+form{
+    background-color:#1b1c31;
+    color: #eeeeee;
+}
+
+
+form input,select{
+    font-size: 20px;
+}
+
+form textarea{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em 1em;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #1b1c31;
+    font-size: 20px;
+}
+
+.frm{
+    width: 70%;
+}
+
+.frm form{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    padding: 5% 5%;
+    align-content: center;
+}
+
+#name, #email, #age{
+    border-radius: 10px;
+    border: 2px solid #1b1c31;
+    padding: 20px; 
+    width: 80%;
+    height: 15px;
+}
+
+#role{
+    border-radius: 10px;
+    border: 2px solid #1b1c31;
+    width: 86%;
+    padding: 20px; 
+}
+
+#subbtn{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border: 0px solid #3eae68;
+    background-color: #3eae68;
+    color: #eeeeee;
+    padding: 20px 20px; 
+    width: 85%;
+    /* height: 15px; */
+}
+
+@media only screen and (max-width: 600px) {
+    .heading{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        align-content: center;
+        font-size: 90%;
+    }
+
+    .heading h1{
+        font-size: 150%;
+    }
+
+    .logo{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+  }
