@@ -1,117 +1,44 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #eeeeee;
-    font-size: 20px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-.container{
-    align-items: center;
+.header {
     display: flex;
     justify-content: center;
-    flex-flow: column wrap;
-    gap: 10px 0;
-}
-
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    padding-right: 10%;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-end;
-    margin-right: 20px;
-    width: auto;
+.header h1 {
+    font-size: 30px;
 }
 
 .img1 {
-    width: 50%;
+    width: 18%;
+    height: auto;
 }
 
-.heading{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    align-content: center;
-}
-
-.heading h1{
-    font-size: 40px;
-    font-weight: 900;
-}
-
-form{
-    background-color:#1b1c31;
+.frm {
+    background-color: #1b1c31;
+    padding: 2rem;
     color: #eeeeee;
+    flex: 1;
 }
 
-
-form input,select{
-    font-size: 20px;
-}
-
-form textarea{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 1em 1em;
-    width: 80%;
-    border-radius: 10px;
-    border: 2px solid #1b1c31;
-    font-size: 20px;
-}
-
-.frm{
-    width: 70%;
-}
-
-.frm form{
-    display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
-    padding: 5% 5%;
-    align-content: center;
-}
-
-#name, #email, #age{
-    border-radius: 10px;
-    border: 2px solid #1b1c31;
-    padding: 20px; 
-    width: 80%;
-    height: 15px;
-}
-
-#role{
-    border-radius: 10px;
-    border: 2px solid #1b1c31;
-    width: 86%;
-    padding: 20px; 
+form input[type=text],[type=email],[type=number], [type=submit], select, textarea {
+    width: 95%;
+    padding: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    border-radius: .5rem;
 }
 
 #subbtn{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 10px;
-    border: 0px solid #3eae68;
     background-color: #3eae68;
     color: #eeeeee;
-    padding: 20px 20px; 
-    width: 85%;
 }
-
-@media only screen and (max-width: 600px) {
-    .heading{
-        font-size: 90%;
-    }
-
-    .heading h1{
-        font-size: 150%;
-    }
-
-    .logo{
-        width: 30%;
-        justify-content: center;
-    }
-  }
